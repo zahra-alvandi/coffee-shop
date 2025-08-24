@@ -1,4 +1,5 @@
 /*! tailwindcss v4.1.12 | MIT License | https://tailwindcss.com */
+@layer properties;
 @layer theme, base, components, utilities;
 @layer theme {
   :root, :host {
@@ -6,11 +7,13 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-white: #fff;
     --spacing: 0.25rem;
-    --radius-lg: 0.5rem;
+    --text-3xl: 1.875rem;
+    --text-3xl--line-height: calc(2.25 / 1.875);
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
+    --font-Dana: "Dana";
+    --font-MorabbaBold: "Morabba Bold";
   }
 }
 @layer base {
@@ -162,13 +165,117 @@
   }
 }
 @layer utilities {
-  .rounded-lg {
-    border-radius: var(--radius-lg);
+  .container {
+    width: 100%;
+    @media (width >= 40rem) {
+      max-width: 40rem;
+    }
+    @media (width >= 48rem) {
+      max-width: 48rem;
+    }
+    @media (width >= 64rem) {
+      max-width: 64rem;
+    }
+    @media (width >= 80rem) {
+      max-width: 80rem;
+    }
+    @media (width >= 96rem) {
+      max-width: 96rem;
+    }
   }
-  .p-4 {
-    padding: calc(var(--spacing) * 4);
+  .container {
+    margin-inline: auto;
+    padding-inline: calc(var(--spacing) * 4);
+    @media (width >= 64rem) {
+      padding-inline: calc(var(--spacing) * 2.5);
+    }
   }
-  .text-white {
-    color: var(--color-white);
+  .table {
+    display: table;
+  }
+  .border-collapse {
+    border-collapse: collapse;
+  }
+  .resize {
+    resize: both;
+  }
+  .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+  }
+  .font-Dana {
+    font-family: var(--font-Dana);
+  }
+  .font-MorabbaBold {
+    font-family: var(--font-MorabbaBold);
+  }
+  .text-3xl {
+    font-size: var(--text-3xl);
+    line-height: var(--tw-leading, var(--text-3xl--line-height));
+  }
+  .underline {
+    text-decoration-line: underline;
+  }
+  .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
+  }
+}
+@layer utilities {
+  .bg-home-mobile {
+    background-image: url('../images/headerBgMobile.webp');
+  }
+  .bg-home-desktop {
+    background-image: url('../images/headerBgDesktop.webp');
+  }
+}
+@layer base {
+  @font-face {
+    font-family: "Dana";
+    src: local("Dana"), url("../public/fonts/Dana/woff2/DanaFaNum-Regular.woff2") format("woff2");
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Dana Medium";
+    src: local("Dana Medium"), url("../public/fonts/Dana/woff2/DanaFaNum-Medium.woff2") format("woff2");
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Dana DemiBold";
+    src: local("Dana DemiBold"), url("../public/fonts/Dana/woff2/DanaFaNum-DemiBold.woff2") format("woff2");
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Morabba Light";
+    src: local("Morabba Light"), url("../public/fonts/Morabba/woff2/Morabba-Light.woff2") format("woff2");
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Morabba Medium";
+    src: local("Morabba Medium"), url("../public/fonts/Morabba/woff2/Morabba-Medium.woff2") format("woff2");
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Morabba Bold";
+    src: local("Morabba Bold"), url("../public/fonts/Morabba/woff2/Morabba-Bold.woff2") format("woff2");
+    font-display: swap;
+  }
+}
+@property --tw-border-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
+@layer properties {
+  @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
+    *, ::before, ::after, ::backdrop {
+      --tw-border-style: solid;
+      --tw-outline-style: solid;
+    }
   }
 }
