@@ -31,7 +31,8 @@
     background-image: url("../images/headerBgMobile.webp");
   }
   .bg-home-desktop {
-    background-image: url("../images/headerBgDesktop.webp");
+    background-image: url("../images/headerBgDesktop.png");
+    background-repeat: no-repeat;
   }
 }
 
