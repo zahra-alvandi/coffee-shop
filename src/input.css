@@ -34,6 +34,13 @@
     background-image: url("../images/headerBgDesktop.png");
     background-repeat: no-repeat;
   }
+  .items-hover:hover {
+    transition: colors;
+    color: #fdba74;
+  }
+  .items-leading {
+    line-height: 56px;
+  }
 }
 
 @layer base {

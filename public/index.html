@@ -39,10 +39,11 @@
 
     </svg>
 
-    <header class="fixed top-9 right-0 left-0 flex items-center w-[90%] h-24 px-10 mx-auto bg-black/50 rounded-3xl backdrop-blur-[6px]">
+    <header
+        class="fixed top-9 right-0 left-0 flex items-center w-[90%] h-24 px-10 mx-auto bg-black/50 rounded-3xl backdrop-blur-[6px]">
         <div class="flex items-center justify-between w-full">
             <!-- Logo & menu -->
-            <nav class="flex items-center gap-x-9">
+            <nav class="flex items-center gap-x-9 h-14">
 
                 <!-- Logo -->
                 <div>
@@ -50,45 +51,34 @@
                 </div>
 
                 <!-- Menu -->
-                <ul class="flex gap-x-9 text-xl text-gray-300 tracking-tightest">
-                    <li class="text-orange-200">
+                <ul class="flex gap-x-9 h-full text-xl text-gray-300 tracking-tightest">
+                    <li class="text-orange-200 items-leading">
                         <a href="#">صفحه اصلی</a>
                     </li>
                     <!-- Has Sunmenu -->
-                    <li>
+                    <li class="relative items-leading">
                         <a href="#">فروشگاه</a>
                         <!-- Submenu -->
-                        <ul class="hidden">
-                            <li>
-                                <a href="#">قهوه ویژه</a>
-                            </li>
-                            <li>
-                                <a href="#">ویژه در سطح جهانی</a>
-                            </li>
-                            <li>
-                                <a href="#">قهوه درجه یک</a>
-                            </li>
-                            <li>
-                                <a href="#">ترکیبات تجاری</a>
-                            </li>
-                            <li>
-                                <a href="#">کپسول قهوه</a>
-                            </li>
-                            <li>
-                                <a href="#">قهوه زینو برزیلی</a>
-                            </li>
-                        </ul>
+                        <div
+                            class="absolute w-52 p-6 bg-white dark:bg-zinc-700 rounded-2xl border-t-[3px] border-t-orange-300 text-zinc-700 dark:text-white text-base  space-y-4 tracking-normal shadow-normal">
+                            <a class="block items-hover" href="#">قهوه ویژه</a>
+                            <a class="block items-hover" href="#">ویژه در سطح جهانی</a>
+                            <a class="block items-hover" href="#">قهوه درجه یک</a>
+                            <a class="block items-hover" href="#">ترکیبات تجاری</a>
+                            <a class="block items-hover" href="#">کپسول قهوه</a>
+                            <a class="block items-hover" href="#">قهوه زینو برزیلی</a>
+                        </div>
                     </li>
-                    <li>
+                    <li class="items-leading">
                         <a href="#">دیکشنری</a>
                     </li>
-                    <li>
+                    <li class="items-leading">
                         <a href="#">بلاگ</a>
                     </li>
-                    <li>
+                    <li class="items-leading">
                         <a href="#">درباره ما</a>
                     </li>
-                    <li>
+                    <li class="items-leading">
                         <a href="#">تماس با ما</a>
                     </li>
                 </ul>
@@ -119,7 +109,7 @@
                     <svg class="w-8 h-8">
                         <use xlink:href="#arrow=left-onrectangle"></use>
                     </svg>
-                    <span>ورود  |  ثبت‌نام</span>
+                    <span>ورود | ثبت‌نام</span>
                 </a>
             </div>
 
