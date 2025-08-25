@@ -7,23 +7,21 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-red-50: oklch(97.1% 0.013 17.38);
     --color-orange-200: oklch(90.1% 0.076 70.697);
     --color-gray-100: oklch(96.7% 0.003 264.542);
     --color-gray-300: oklch(87.2% 0.01 258.338);
     --color-zinc-800: oklch(27.4% 0.006 286.033);
     --color-black: #000;
+    --color-white: #fff;
     --spacing: 0.25rem;
     --text-xl: 1.25rem;
     --text-xl--line-height: calc(1.75 / 1.25);
-    --text-3xl: 1.875rem;
-    --text-3xl--line-height: calc(2.25 / 1.875);
     --radius-3xl: 1.5rem;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
-    --font-Dana: "Dana";
     --font-DanaMeduim: "Dana Meduim";
     --font-DanaDemiBold: "Dana DemiBold";
-    --font-MorabbaLight: "Morabba Light";
   }
 }
 @layer base {
@@ -215,6 +213,9 @@
   .mx-auto {
     margin-inline: auto;
   }
+  .block {
+    display: block;
+  }
   .flex {
     display: flex;
   }
@@ -226,6 +227,9 @@
   }
   .h-8 {
     height: calc(var(--spacing) * 8);
+  }
+  .h-14 {
+    height: calc(var(--spacing) * 14);
   }
   .h-24 {
     height: calc(var(--spacing) * 24);
@@ -239,6 +243,9 @@
   .w-full {
     width: 100%;
   }
+  .w-px {
+    width: 1px;
+  }
   .border-collapse {
     border-collapse: collapse;
   }
@@ -251,11 +258,23 @@
   .justify-between {
     justify-content: space-between;
   }
+  .gap-10 {
+    gap: calc(var(--spacing) * 10);
+  }
+  .gap-x-2 {
+    column-gap: calc(var(--spacing) * 2);
+  }
+  .gap-x-2\.5 {
+    column-gap: calc(var(--spacing) * 2.5);
+  }
   .gap-x-5 {
     column-gap: calc(var(--spacing) * 5);
   }
   .gap-x-9 {
     column-gap: calc(var(--spacing) * 9);
+  }
+  .gap-x-10 {
+    column-gap: calc(var(--spacing) * 10);
   }
   .rounded-3xl {
     border-radius: var(--radius-3xl);
@@ -276,17 +295,26 @@
   .bg-gray-100 {
     background-color: var(--color-gray-100);
   }
+  .bg-red-50 {
+    background-color: var(--color-red-50);
+  }
+  .bg-white {
+    background-color: var(--color-white);
+  }
+  .bg-white\/20 {
+    background-color: color-mix(in srgb, #fff 20%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-white) 20%, transparent);
+    }
+  }
+  .px-10 {
+    padding-inline: calc(var(--spacing) * 10);
+  }
   .pr-10 {
     padding-right: calc(var(--spacing) * 10);
   }
   .pl-4 {
     padding-left: calc(var(--spacing) * 4);
-  }
-  .font-DanaDemiBold {
-    font-family: var(--font-DanaDemiBold);
-  }
-  .font-DanaMeduim {
-    font-family: var(--font-DanaMeduim);
   }
   .text-xl {
     font-size: var(--text-xl);
