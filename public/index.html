@@ -56,11 +56,11 @@
                         <a href="#">صفحه اصلی</a>
                     </li>
                     <!-- Has Sunmenu -->
-                    <li class="relative items-leading">
-                        <a href="#">فروشگاه</a>
+                    <li class="relative items-leading group">
+                        <a href="#" class="group-hover:text-orange-300 transition-colors">فروشگاه</a>
                         <!-- Submenu -->
                         <div
-                            class="absolute w-52 p-6 bg-white dark:bg-zinc-700 rounded-2xl border-t-[3px] border-t-orange-300 text-zinc-700 dark:text-white text-base  space-y-4 tracking-normal shadow-normal">
+                            class="absolute w-52 p-6 bg-white opacity-0 invisible group-hover:opacity-100 group-hover:visible dark:bg-zinc-700 rounded-2xl border-t-[3px] border-t-orange-300 text-zinc-700 dark:text-white text-base transition-all space-y-4 tracking-normal shadow-normal top-full">
                             <a class="block items-hover" href="#">قهوه ویژه</a>
                             <a class="block items-hover" href="#">ویژه در سطح جهانی</a>
                             <a class="block items-hover" href="#">قهوه درجه یک</a>
@@ -70,16 +70,16 @@
                         </div>
                     </li>
                     <li class="items-leading">
-                        <a href="#">دیکشنری</a>
+                        <a href="#" class="hover:text-orange-300">دیکشنری</a>
                     </li>
                     <li class="items-leading">
-                        <a href="#">بلاگ</a>
+                        <a href="#" class="hover:text-orange-300">بلاگ</a>
                     </li>
                     <li class="items-leading">
-                        <a href="#">درباره ما</a>
+                        <a href="#" class="hover:text-orange-300">درباره ما</a>
                     </li>
                     <li class="items-leading">
-                        <a href="#">تماس با ما</a>
+                        <a href="#" class="hover:text-orange-300">تماس با ما</a>
                     </li>
                 </ul>
             </nav>
@@ -90,14 +90,19 @@
                 <div class="flex gap-x-5 items-center">
                     <!-- cart -->
                     <div>
-                        <svg class="w-8 h-8">
-                            <use xlink:href="#shopping-cart"></use>
-                        </svg>
+                        <!-- Cart Icon hover -->
+                        <div class="py-3">
+                            <svg class="w-8 h-8">
+                                <use href="#shopping-cart"></use>
+                            </svg>
+                        </div>
+                        <!-- cart box -->
+                         <div></div>
                     </div>
                     <!-- theme swith btn -->
                     <div>
                         <svg class="w-8 h-8">
-                            <use xlink:href="#moon"></use>
+                            <use href="#moon"></use>
                         </svg>
                     </div>
                 </div>
@@ -107,7 +112,7 @@
                 <!-- Login Link -->
                 <a href="#" class="flex items-center gap-x-2.5 tracking-tightest">
                     <svg class="w-8 h-8">
-                        <use xlink:href="#arrow=left-onrectangle"></use>
+                        <use href="#arrow=left-onrectangle"></use>
                     </svg>
                     <span>ورود | ثبت‌نام</span>
                 </a>

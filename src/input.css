@@ -37,6 +37,7 @@
   .items-hover:hover {
     transition: colors;
     color: #fdba74;
+    display: inline-block;
   }
   .items-leading {
     line-height: 56px;
