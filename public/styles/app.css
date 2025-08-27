@@ -240,6 +240,12 @@
   .hidden {
     display: none;
   }
+  .inline {
+    display: inline;
+  }
+  .inline-block {
+    display: inline-block;
+  }
   .table {
     display: table;
   }
@@ -272,6 +278,9 @@
   }
   .border-collapse {
     border-collapse: collapse;
+  }
+  .cursor-pointer {
+    cursor: pointer;
   }
   .resize {
     resize: both;
@@ -440,6 +449,16 @@
       @media (hover: hover) {
         color: var(--color-orange-300);
       }
+    }
+  }
+  .dark\:hidden {
+    @media (prefers-color-scheme: dark) {
+      display: none;
+    }
+  }
+  .dark\:inline-block {
+    @media (prefers-color-scheme: dark) {
+      display: inline-block;
     }
   }
   .dark\:bg-zinc-700 {
