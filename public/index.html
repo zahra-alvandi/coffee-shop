@@ -51,6 +51,12 @@
                 d="M15.75 9V5.25A2.25 2.25 0 0 0 13.5 3h-6a2.25 2.25 0 0 0-2.25 2.25v13.5A2.25 2.25 0 0 0 7.5 21h6a2.25 2.25 0 0 0 2.25-2.25V15m3 0 3-3m0 0-3-3m3 3H9" />
         </symbol>
 
+        <symbol id="chevron-left" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+        </symbol>
+
+
     </svg>
 
     <header
@@ -103,15 +109,25 @@
                 <!-- cart icon & theme switch btn -->
                 <div class="flex gap-x-5 items-center">
                     <!-- cart -->
-                    <div>
+                    <div class="relative group">
                         <!-- Cart Icon hover -->
-                        <div class="py-3">
+                        <div class="py-3 cursor-pointer">
                             <svg class="w-8 h-8">
                                 <use href="#shopping-cart"></use>
                             </svg>
                         </div>
                         <!-- cart box -->
-                        <div></div>
+                        <div
+                            class="absolute top-full left-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible w-[400px] p-5 bg-white dark:bg-zinc-700 border-t-[3px] border-t-orange-300 shadow-normal rounded-2xl transition-all">
+                            <div class="flex items-center justify-between tracking-tightest text-xs">
+                                <span class="text-gray-300">1 مورد</span>
+                                <a href="#" class="flex items-center">مشاهده سبد خرید
+                                    <svg>
+                                        <use href="#chevron-left" class="w-4 h-4"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                     <!-- theme swith btn -->
                     <div class="cursor-pointer" id="toggle-theme">
