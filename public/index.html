@@ -119,7 +119,7 @@
                         </div>
                         <!-- cart box -->
                         <div
-                            class="absolute top-full left-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible w-[400px] p-5 bg-white dark:bg-zinc-700 border-t-[3px] border-t-orange-300 shadow-normal rounded-2xl transition-all">
+                            class="absolute top-full left-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible w-[400px] p-5 bg-white dark:bg-zinc-700 border-t-[3px] border-t-orange-300 shadow-normal rounded-2xl transition-all delay-75">
                             <!-- Cart header -->
                             <div class="flex items-center justify-between tracking-tightest text-xs">
                                 <span class="text-gray-300">1 مورد</span>
@@ -131,11 +131,12 @@
                                 </a>
                             </div>
                             <!-- Cart body -->
-                            <div class="pb-1 border-b border-b-gray-300 dark:border-b-white/10 divide-y divide-gray-100 dark:divide-white/10">
+                            <div
+                                class="pb-1 border-b border-b-gray-300 dark:border-b-white/10 divide-y divide-gray-100 dark:divide-white/10">
                                 <div class="flex gap-x-2.5 py-5">
                                     <img src="./images/products/p2.png" class="w-30" alt="product-1">
                                     <div class="flex flex-col justify-between">
-                                        <h4 class="text-zinc-700 dark:text-white text-base">قهوه اسپرسو بن
+                                        <h4 class="text-zinc-700 dark:text-white text-base line-clamp-2">قهوه اسپرسو بن
                                             مانو مدل پریسکا 250 گرمی</h4>
                                         <div>
                                             <span
@@ -148,10 +149,10 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="flex gap-x-2.5 py-5">
+                                <!-- <div class="flex gap-x-2.5 py-5">
                                     <img src="./images/products/p1.png" class="w-30" alt="product-1">
                                     <div class="flex flex-col justify-between">
-                                        <h4 class="text-zinc-700 dark:text-white text-base">قهوه اسپرسو بن
+                                        <h4 class="text-zinc-700 dark:text-white text-base line-clamp-2">قهوه اسپرسو بن
                                             مانو مدل پریسکا 250 گرمی</h4>
                                         <div>
                                             <span
@@ -163,10 +164,24 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
                             <!-- Cart footer -->
-                            <div></div>
+                            <div>
+                                <div class="flex justify-between mt-5">
+                                    <div>
+                                        <span class="text-gray-300 text-xs tracking-tightest">مبلغ
+                                            قابل پرداخت</span>
+                                        <div class="text-zinc-700 dark:text-white tracking-tightest">
+                                            350,000
+                                            <span class="text-sm">تومان</span>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="flex justify-center items-center w-[144px] h-14 rounded-xl text-white bg-teal-600 dark:bg-emerald-500 hover:bg-teal-700 dark:hover:bg-emerald-600 transition-colors tracking-tighter">
+                                        ثبت سفارش
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <!-- theme swith btn -->
