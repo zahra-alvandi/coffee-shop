@@ -56,23 +56,27 @@
             <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
         </symbol>
 
+        <symbol id="bars-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </symbol>
 
 
     </svg>
 
     <header
-        class="fixed top-9 right-0 left-0 hidden lg:flex items-center w-[90%] h-24 px-10 mx-auto bg-black/50 rounded-3xl backdrop-blur-[6px]">
+        class="fixed top-9 right-0 left-0 hidden md:flex items-center w-[98%] lg:w-[90%] h-24 px-5 lg:px-10 mx-auto bg-black/50 rounded-3xl backdrop-blur-[6px]">
         <div class="flex items-center justify-between w-full">
             <!-- Logo & menu -->
-            <nav class="flex items-center gap-x-9 h-14">
+            <nav class="flex items-center gap-x-6 lg:gap-x-9 h-14">
 
                 <!-- Logo -->
-                <div>
+                <div class="shrink-0">
                     <img src="./images/app-logo.png" alt="Golden Coffee">
                 </div>
 
                 <!-- Menu -->
-                <ul class="flex gap-x-9 h-full text-xl text-gray-300 tracking-tightest">
+                <ul class="flex gap-x-5 lg:gap-x-9 h-full text-xl text-gray-300 tracking-tightest">
                     <li class="text-orange-200 items-leading">
                         <a href="#">صفحه اصلی</a>
                     </li>
@@ -106,9 +110,9 @@
             </nav>
 
             <!-- Cart , Theme toggle & Login Link -->
-            <div class="flex gap-x-5 xl:gap-x-10 text-xl text-orange-200">
+            <div class="flex gap-x-4 lg:gap-x-5 xl:gap-x-10 text-xl text-orange-200">
                 <!-- cart icon & theme switch btn -->
-                <div class="flex gap-x-5 items-center">
+                <div class="flex gap-x-4 lg:gap-x-5 items-center">
                     <!-- cart -->
                     <div class="relative group">
                         <!-- Cart Icon hover -->
@@ -209,6 +213,27 @@
 
         </div>
     </header>
+
+    <div class="flex md:hidden items-center justify-between h-16 bg-white dark:bg-zinc-700 px-4">
+        <!-- Nav Icon -->
+        <div>
+            <svg class="w-6 h-6 text-zinc-700 dark:text-white">
+                <use href="#bars-3"></use>
+            </svg>
+        </div>
+
+        <!-- logo type -->
+        <div class="w-[100px] h-10 class="text-orange-300"">
+            <img src="images/svgs/logo-type.svg" class="text-orange-300" alt="">
+        </div>
+
+        <!-- cart icon -->
+        <div>
+            <svg class="w-6 h-6 text-zinc-700 dark:text-white">
+                <use href="#shopping-cart"></use>
+            </svg>
+        </div>
+    </div>
 
     <script src="./scripts/app.js"></script>
 </body>
