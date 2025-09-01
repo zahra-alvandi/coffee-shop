@@ -61,6 +61,11 @@
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </symbol>
 
+        <symbol id="x-mark" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+        </symbol>
+
 
     </svg>
 
@@ -221,9 +226,21 @@
                 <use href="#bars-3"></use>
             </svg>
         </div>
+        <!-- menu -->
+        <div class="fixed top-0 bottom-0 right-0 w-64 min-h-screen pt-3 px-4 bg-white dark:bg-zinc-700 z-20">
+            <div class="flex items-center justify-between pb-5 mb-6 border-b border-b-gray-100 dark:border-b-white/10">
+                <div class="flex items-center gap-x-3.5">
+                    <img src="./images/svgs/logo.svg" class="w-[41px] h-10" alt="">
+                    <img src="./images/svgs/logo-type.svg" class="w-[100px] h-10 text-orange-300" alt="">
+                </div>
+                <svg class="w-6 h-6">
+                    <use href="#x-mark"></use>
+                </svg>
+            </div>
+        </div>
 
         <!-- logo type -->
-        <div class="w-[100px] h-10 class="text-orange-300"">
+        <div class="w-[100px] h-10 text-zinc-600 dark:text-white">
             <img src="images/svgs/logo-type.svg" class="text-orange-300" alt="">
         </div>
 
@@ -235,6 +252,8 @@
         </div>
     </div>
 
+
+    <div class="overlay md:hidden fixed inset-0 w-full h-full bg-black/40 z-10"></div>
     <script src="./scripts/app.js"></script>
 </body>
 
