@@ -372,9 +372,6 @@
       border-color: var(--color-gray-100);
     }
   }
-  .rounded {
-    border-radius: 0.25rem;
-  }
   .rounded-2xl {
     border-radius: var(--radius-2xl);
   }
@@ -441,17 +438,8 @@
   .py-5 {
     padding-block: calc(var(--spacing) * 5);
   }
-  .pt-5 {
-    padding-top: calc(var(--spacing) * 5);
-  }
   .pb-1 {
     padding-bottom: calc(var(--spacing) * 1);
-  }
-  .pb-6 {
-    padding-bottom: calc(var(--spacing) * 6);
-  }
-  .font-DanaDemiBold {
-    font-family: var(--font-DanaDemiBold);
   }
   .text-base {
     font-size: var(--text-base);
@@ -571,6 +559,21 @@
       }
     }
   }
+  .lg\:flex {
+    @media (width >= 64rem) {
+      display: flex;
+    }
+  }
+  .xl\:inline-block {
+    @media (width >= 80rem) {
+      display: inline-block;
+    }
+  }
+  .xl\:gap-x-10 {
+    @media (width >= 80rem) {
+      column-gap: calc(var(--spacing) * 10);
+    }
+  }
   .dark\:hidden {
     @media (prefers-color-scheme: dark) {
       display: none;
@@ -579,13 +582,6 @@
   .dark\:inline-block {
     @media (prefers-color-scheme: dark) {
       display: inline-block;
-    }
-  }
-  .dark\:divide-white {
-    @media (prefers-color-scheme: dark) {
-      :where(& > :not(:last-child)) {
-        border-color: var(--color-white);
-      }
     }
   }
   .dark\:divide-white\/10 {
