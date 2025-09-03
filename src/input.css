@@ -91,6 +91,9 @@
   .submenu--open {
     @apply flex;
   }
+  .cart--open {
+    @apply flex;
+  }
   .submenu__item--active::after {
     content: "";
     display: block;
