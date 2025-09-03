@@ -262,22 +262,25 @@
 
     <div class="flex md:hidden items-center justify-between h-16 bg-white dark:bg-zinc-700 px-4">
         <!-- Nav Icon -->
-        <div>
+        <div class="nav-icon">
             <svg class="w-6 h-6 text-zinc-700 dark:text-white">
                 <use href="#bars-3"></use>
             </svg>
         </div>
         <!-- nav -->
-        <div class="fixed top-0 bottom-0 right-0 w-64 min-h-screen pt-3 px-4 bg-white dark:bg-zinc-700 z-20">
+        <div
+            class="nav fixed top-0 bottom-0 -right-64 w-64 min-h-screen pt-3 px-4 bg-white dark:bg-zinc-700 z-20 overflow-y-auto transition-all">
             <!-- nav header -->
             <div class="flex items-center justify-between pb-5 mb-6 border-b border-b-gray-100 dark:border-b-white/10">
                 <div class="flex items-center gap-x-3.5">
                     <img src="./images/svgs/logo.svg" class="w-[41px] h-10" alt="">
                     <img src="./images/svgs/logo-type.svg" class="w-[100px] h-10 text-orange-300" alt="">
                 </div>
-                <svg class="w-6 h-6">
-                    <use href="#x-mark"></use>
-                </svg>
+                <div class="nav-close-btn">
+                    <svg class="w-6 h-6">
+                        <use href="#x-mark"></use>
+                    </svg>
+                </div>
             </div>
 
             <!-- nav menu -->
@@ -290,7 +293,7 @@
                 </a>
             </div>
             <ul class="flex flex-col space-y-6 text-zinc-600 dark:text-white">
-                <li class="pr-2.5 text-orange-300">
+                <li class="pr-2.5">
                     <div class="flex items-center justify-between">
                         <a href="#" class="flex items-center gap-x-2">
                             <svg class="w-5 h-5">
@@ -305,7 +308,7 @@
                         </span>
                     </div>
                     <!-- sub menu -->
-                    <div class="submenu flex flex-col gap-y-3 pr-7 mt-3 text-sm text-zinc-600 dark:text-white">
+                    <div class="submenu">
                         <a href="#">قهوه ویژه</a>
                         <a href="#" class="submenu__item--active">ویژه در سطح جهانی</a>
                         <a href="#">قهوه درجه یک</a>
@@ -350,7 +353,7 @@
 
             <!-- nav footer -->
             <div
-                class="flex flex-col items-start gap-6 pt-8 pb-5 px-2.5 mt-8 text-orange-300 border-t border-t-gray-100 dark:border-t-white/10">
+                class="flex flex-col items-start gap-6 py-8 pb-5 px-2.5 mt-8 text-orange-300 border-t border-t-gray-100 dark:border-t-white/10">
 
                 <a href="#" class="inline-flex items-center gap-x-2 text-sm">
                     <svg class="w-5 h-5">
@@ -397,7 +400,7 @@
     </div>
 
 
-    <div class="overlay md:hidden fixed inset-0 w-full h-full bg-black/40 z-10"></div>
+    <div class="overlay"></div>
     <script src="./scripts/app.js"></script>
 </body>
 

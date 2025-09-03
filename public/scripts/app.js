@@ -1,6 +1,10 @@
 const toggleThemeBtns = document.querySelectorAll(".toggle-theme");
-
-
+const submenuOpenBtn = document.querySelector(".submenu-open-btn");
+const submenu = document.querySelector(".submenu");
+const navOpenBtn = document.querySelector(".nav-icon")
+const navCloseBtn = document.querySelector(".nav-close-btn")
+const nav = document.querySelector(".nav")
+const overlay = document.querySelector(".overlay")
 
 toggleThemeBtns.forEach(btn => {
     btn.addEventListener("click", function () {
@@ -14,49 +18,26 @@ toggleThemeBtns.forEach(btn => {
     })
 })
 
-// toggleThemeBtns.addEventListener("click", () => {
-//     if (localStorage.theme === "dark") {
-//         document.documentElement.classList.remove("dark");
-//         localStorage.theme = "light";
-//     } else {
-//         document.documentElement.classList.add("dark");
-//         localStorage.setItem("theme", "dark");
-//     }
-// })
+submenuOpenBtn.addEventListener("click", function (event) {
+    event.currentTarget.parentElement.classList.toggle("text-orange-300");
+    submenu.classList.toggle("submenu--open");
+})
 
-// Dark/Light/System Theme Toggle with localStorage (Optimized)
-// (function () {
-//     const KEY = 'theme'; // 'light' | 'dark' | 'system'
-//     const root = document.documentElement;
-//     const mq = window.matchMedia('(prefers-color-scheme: dark)');
-//     let current = localStorage.getItem(KEY) || 'system';
+navOpenBtn.addEventListener("click", function () {
+    nav.classList.remove("-right-64");
+    nav.classList.add("right-0");
+    overlay.classList.add("overlay--visible")
+})
 
-//     function setTheme(mode) {
-//         current = mode;
-//         localStorage.setItem(KEY, mode);
-//         root.setAttribute('data-theme', mode);
-//         updateLabel();
-//     }
+navCloseBtn.addEventListener("click", function () {
+    nav.classList.add("-right-64");
+    nav.classList.remove("right-0");
+    overlay.classList.remove("overlay--visible")
+})
 
-//     function effectiveTheme() {
-//         return current === 'system' ? (mq.matches ? 'dark' : 'light') : current;
-//     }
+overlay.addEventListener("click", function () {
+    nav.classList.add("-right-64");
+    nav.classList.remove("right-0");
+    overlay.classList.remove("overlay--visible")
+})
 
-//     function updateLabel() {
-//         const label = {
-//             light: 'روشن',
-//             dark: 'تاریک',
-//             system: 'سیستمی'
-//         };
-//         console.log(`انتخاب: ${label[current]} | اعمال‌شده: ${label[effectiveTheme()]}`);
-//     }
-
-//     // Listen to system changes when in system mode
-//     mq.addEventListener('change', () => current === 'system' && updateLabel());
-
-//     // Public API: call setTheme('light'|'dark'|'system') from your buttons
-//     window.setTheme = setTheme;
-
-//     // Init
-//     setTheme(current);
-// })();
