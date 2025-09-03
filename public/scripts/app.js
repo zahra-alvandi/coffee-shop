@@ -1,5 +1,7 @@
 const toggleThemeBtns = document.querySelectorAll(".toggle-theme");
 
+
+
 toggleThemeBtns.forEach(btn => {
     btn.addEventListener("click", function () {
         if (localStorage.theme === "dark") {
