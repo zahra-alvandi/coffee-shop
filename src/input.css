@@ -28,11 +28,10 @@
 
 @layer utilities {
   .bg-home-mobile {
-    background-image: url("../images/headerBgMobile.webp");
+    background-image: url("../public/images/headerBgMobile.webp");
   }
   .bg-home-desktop {
-    background-image: url("../images/headerBgDesktop.webp");
-    background-repeat: no-repeat;
+    background-image: url("../public/images/headerBgDesktop.webp");
   }
   .items-hover:hover {
     transition: colors;
