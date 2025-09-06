@@ -115,4 +115,23 @@
   .overlay--visible {
     @apply visible opacity-100;
   }
+
+  .circle {
+    @apply flex justify-center items-center border border-b-0 border-l-0 border-r-0 rounded-full;
+  }
+  .circle--main {
+    @apply absolute bottom-0 right-0 left-0 mx-auto translate-y-2/4 hidden md:flex;
+  }
+  .circle--lg {
+    @apply w-[203px] h-[203px]  border-white/25;
+  }
+  .cricle--md {
+    @apply w-[145px] h-[145px] border-white/50;
+  }
+  .circle--sm {
+    @apply w-[95px] h-[95px] border-white/80;
+  }
+  /* .curve {
+    @apply dark:bg-zinc-800;
+  } */
 }
