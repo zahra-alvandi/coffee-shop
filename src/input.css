@@ -146,7 +146,6 @@
           rgba(243, 244, 246, 0.65)
         ),
         url(../public/images/products-bg.png);
-      height: 900px;
       background-repeat: no-repeat;
       background-size: 100%;
     }
