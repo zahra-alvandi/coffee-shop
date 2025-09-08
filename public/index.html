@@ -136,6 +136,19 @@
                 clip-rule="evenodd" />
         </symbol>
 
+        <symbol class="arrow-left-rigth" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd"
+                d="M13.2 2.24a.75.75 0 0 0 .04 1.06l2.1 1.95H6.75a.75.75 0 0 0 0 1.5h8.59l-2.1 1.95a.75.75 0 1 0 1.02 1.1l3.5-3.25a.75.75 0 0 0 0-1.1l-3.5-3.25a.75.75 0 0 0-1.06.04Zm-6.4 8a.75.75 0 0 0-1.06-.04l-3.5 3.25a.75.75 0 0 0 0 1.1l3.5 3.25a.75.75 0 1 0 1.02-1.1l-2.1-1.95h8.59a.75.75 0 0 0 0-1.5H4.66l2.1-1.95a.75.75 0 0 0 .04-1.06Z"
+                clip-rule="evenodd" />
+        </symbol>
+
+        <symbol id="star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd"
+                d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z"
+                clip-rule="evenodd" />
+        </symbol>
+
+
 
     </svg>
 
@@ -450,8 +463,7 @@
                         <h4 class="text-zinc-700 dark:text-white text-sm line-clamp-2">قهوه اسپرسو بن
                             مانو مدل پریسکا 250 گرمی</h4>
                         <div>
-                            <span
-                                class="text-teal-600 dark:text-emerald-500 text-xs tracking-tightest">14.500
+                            <span class="text-teal-600 dark:text-emerald-500 text-xs tracking-tightest">14.500
                                 تومان تخفیف</span>
                             <div class="text-zinc-700 dark:text-white tracking-tightest">
                                 175,000
@@ -466,8 +478,7 @@
                         <h4 class="text-zinc-700 dark:text-white text-sm line-clamp-2">قهوه اسپرسو بن
                             مانو مدل پریسکا 250 گرمی</h4>
                         <div>
-                            <span
-                                class="text-teal-600 dark:text-emerald-500 text-xs tracking-tightest">14.500
+                            <span class="text-teal-600 dark:text-emerald-500 text-xs tracking-tightest">14.500
                                 تومان تخفیف</span>
                             <div class="text-zinc-700 dark:text-white tracking-tightest">
                                 175,000
@@ -554,16 +565,36 @@
                 </div>
 
                 <!-- section body -->
-                 <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3.5 md:gap-5">
-                    <div class="p-5 h-[460px] md:h-[200px] rounded-2xl bg-white dark:bg-zinc-700 shadow-normal"></div>
-                    <div class="p-5 h-[460px] md:h-[200px] rounded-2xl bg-white dark:bg-zinc-700 shadow-normal"></div>
-                    <div class="p-5 h-[460px] md:h-[200px] rounded-2xl bg-white dark:bg-zinc-700 shadow-normal"></div>
-                    <div class="p-5 h-[460px] md:h-[200px] rounded-2xl bg-white dark:bg-zinc-700 shadow-normal"></div>
-                    <div class="p-5 h-[460px] md:h-[200px] rounded-2xl bg-white dark:bg-zinc-700 shadow-normal"></div>
-                    <div class="p-5 h-[460px] md:h-[200px] rounded-2xl bg-white dark:bg-zinc-700 shadow-normal"></div>
-                    <div class="p-5 h-[460px] md:h-[200px] rounded-2xl bg-white dark:bg-zinc-700 shadow-normal"></div>
-                    <div class="p-5 h-[460px] md:h-[200px] rounded-2xl bg-white dark:bg-zinc-700 shadow-normal"></div>
-                 </div>
+                <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3.5 md:gap-5">
+                    <div class="p-2 md:p-5 rounded-2xl bg-white dark:bg-zinc-700 shadow-normal">
+                        <div class="relative mb-2 md:mb-5">
+                            <img src="./images/products/p1.png" class="w-32 mx-auto md:w-auto" alt="p 1">
+                            <span
+                                class="absolute top-1.5
+                             right-1.5 font-DanaDemiBold block h-5 md:h-[30px] text-xs/[24px] md:text-base/[34px] bg-orange-300 text-white dark:text-zinc-700 px-2.5 md:px-3.5 rounded-full">12%</span>
+                        </div>
+                        <h5 class="font-DanaDemiBold text-sm md:text-xl text-zinc-500 dark:text-white line-clamp-2">قهوه
+                            ترک بن مانو مقدار 250 گرم
+                            خط دوم اسم طولانی</h5>
+                        <div class="flex gap-x-2 md:gap-x-2.5 mt-1.5 md:mt-2.5">
+                            <div class="text-teal-600 dark:text-emerald-500">
+                                <span class="font-DanaDemiBold text-base md:text-xl">154,000</span>
+                                <span class="text-xs md:text-sm tracking-tighter">تومان</span>
+                            </div>
+                            <div class="offer text-gray-400">
+                                <span class="text-xs md:text-xl">175,000</span>
+                                <span class="hidden xl:inline text-sm tracking-tighter">تومان</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-2 md:p-5 rounded-2xl bg-white dark:bg-zinc-700 shadow-normal"></div>
+                    <div class="p-2 md:p-5 rounded-2xl bg-white dark:bg-zinc-700 shadow-normal"></div>
+                    <div class="p-2 md:p-5 rounded-2xl bg-white dark:bg-zinc-700 shadow-normal"></div>
+                    <div class="p-2 md:p-5 rounded-2xl bg-white dark:bg-zinc-700 shadow-normal"></div>
+                    <div class="p-2 md:p-5 rounded-2xl bg-white dark:bg-zinc-700 shadow-normal"></div>
+                    <div class="p-2 md:p-5 rounded-2xl bg-white dark:bg-zinc-700 shadow-normal"></div>
+                    <div class="p-2 md:p-5 rounded-2xl bg-white dark:bg-zinc-700 shadow-normal"></div>
+                </div>
             </div>
         </section>
     </main>
