@@ -67,6 +67,11 @@
             <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
         </symbol>
 
+        <symbol id="x-mark-mini" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+            <path
+                d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z" />
+        </symbol>
+
         <symbol id="home" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
             stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round"
@@ -122,6 +127,12 @@
         <symbol id="chevron-left-mini" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
             <path fill-rule="evenodd"
                 d="M11.78 5.22a.75.75 0 0 1 0 1.06L8.06 10l3.72 3.72a.75.75 0 1 1-1.06 1.06l-4.25-4.25a.75.75 0 0 1 0-1.06l4.25-4.25a.75.75 0 0 1 1.06 0Z"
+                clip-rule="evenodd" />
+        </symbol>
+
+        <symbol id="chevron-down-mini" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd"
+                d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
                 clip-rule="evenodd" />
         </symbol>
 
@@ -193,8 +204,8 @@
                                 <span class="text-gray-300">1 مورد</span>
                                 <a href="#" class="flex justify-center text-orange-300">
                                     مشاهده سبد خرید
-                                    <svg class="w-4 h-4">
-                                        <use href="#chevron-left" class="size-5"></use>
+                                    <svg class="w-5 h-5">
+                                        <use href="#chevron-left-mini" class="size-5"></use>
                                     </svg>
                                 </a>
                             </div>
@@ -296,9 +307,9 @@
                     <img src="./images/svgs/logo.svg" class="w-[41px] h-10" alt="">
                     <img src="./images/svgs/logo-type.svg" class="w-[100px] h-10 text-orange-300" alt="">
                 </div>
-                <div class="nav-close-btn">
-                    <svg class="w-6 h-6">
-                        <use href="#x-mark"></use>
+                <div class="nav-close-btn text-zinc-700 dark:text-white">
+                    <svg class="w-5 h-5">
+                        <use href="#x-mark-mini"></use>
                     </svg>
                 </div>
             </div>
@@ -322,8 +333,8 @@
                             فروشگاه
                         </a>
                         <span class="submenu-open-btn">
-                            <svg class="w-4 h-4">
-                                <use href="#chevron-down"></use>
+                            <svg class="w-5 h-5">
+                                <use href="#chevron-down-mini"></use>
                             </svg>
                         </span>
                     </div>
@@ -424,8 +435,8 @@
             <!-- cart header -->
             <div class="flex items-center justify-between pb-5 mb-5 border-b border-b-gray-300 dark:border-b-white/10">
                 <div class="cart-close-btn">
-                    <svg class="w-6 h-6">
-                        <use href="#x-mark"></use>
+                    <svg class="w-5 h-5">
+                        <use href="#x-mark-mini"></use>
                     </svg>
                 </div>
                 <span class="text-zinc-700 dark:text-white">سبد خرید</span>
@@ -440,9 +451,9 @@
                             مانو مدل پریسکا 250 گرمی</h4>
                         <div>
                             <span
-                                class="text-teal-600 dark:text-emerald-500 text-xs tracking-tightest font-semibold">14.500
+                                class="text-teal-600 dark:text-emerald-500 text-xs tracking-tightest">14.500
                                 تومان تخفیف</span>
-                            <div class="text-zinc-700 dark:text-white tracking-tightest font-semibold">
+                            <div class="text-zinc-700 dark:text-white tracking-tightest">
                                 175,000
                                 <span class="text-xs">تومان</span>
                             </div>
@@ -456,9 +467,9 @@
                             مانو مدل پریسکا 250 گرمی</h4>
                         <div>
                             <span
-                                class="text-teal-600 dark:text-emerald-500 text-xs tracking-tightest font-semibold">14.500
+                                class="text-teal-600 dark:text-emerald-500 text-xs tracking-tightest">14.500
                                 تومان تخفیف</span>
-                            <div class="text-zinc-700 dark:text-white tracking-tightest font-semibold">
+                            <div class="text-zinc-700 dark:text-white tracking-tightest">
                                 175,000
                                 <span class="text-xs">تومان</span>
                             </div>
@@ -475,7 +486,7 @@
                     سفارش</a>
                 <div>
                     <span class="text-gray-300 text-xs tracking-tighter">مبلغ قابل پرداخت</span>
-                    <div class="text-zinc-700 dark:text-white font-semibold">
+                    <div class="text-zinc-700 dark:text-white">
                         350,000
                         <span class="text-xs">تومان</span>
                     </div>
@@ -524,16 +535,17 @@
         </section>
 
         <!-- section products -->
-        <section class="products">
+        <section class="products pt-8 md:pt-24 lg:pt-48">
             <div class="container">
-                <div class="flex justify-between items-end">
+                <div class="flex justify-between items-end mb-5 md:mb-12">
                     <div>
                         <h3 class="section-title font-MorabbaLight">جدیدترین محصولات</h3>
                         <span class="section-subtitle">فرآوری شده از دانه قهوه</span>
                     </div>
                     <a href="#" class="section-link
                     ">
-                        مشاهده همه محصولات
+                        <span class="hidden md:inline-block">مشاهده همه محصولات</span>
+                        <span class="inline-block md:hidden">مشاهده همه</span>
                         <svg class="w-5 h-5">
                             <use href="#chevron-left-mini"></use>
                         </svg>
