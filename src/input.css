@@ -42,6 +42,9 @@
     line-height: 56px;
     font-size: 18px;
   }
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
 }
 
 @layer base {
@@ -161,7 +164,7 @@
   }
 
   .offer {
-    @apply relative
+    @apply relative;
   }
   .offer::after {
     content: "";
@@ -172,5 +175,5 @@
     margin: auto;
     background-color: #ef4444;
     top: -2px;
-  } 
+  }
 }

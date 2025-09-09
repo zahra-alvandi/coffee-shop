@@ -136,7 +136,8 @@
                 clip-rule="evenodd" />
         </symbol>
 
-        <symbol class="arrow-left-rigth" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+        <symbol id="arrows-right-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+            class="size-5">
             <path fill-rule="evenodd"
                 d="M13.2 2.24a.75.75 0 0 0 .04 1.06l2.1 1.95H6.75a.75.75 0 0 0 0 1.5h8.59l-2.1 1.95a.75.75 0 1 0 1.02 1.1l3.5-3.25a.75.75 0 0 0 0-1.1l-3.5-3.25a.75.75 0 0 0-1.06.04Zm-6.4 8a.75.75 0 0 0-1.06-.04l-3.5 3.25a.75.75 0 0 0 0 1.1l3.5 3.25a.75.75 0 1 0 1.02-1.1l-2.1-1.95h8.59a.75.75 0 0 0 0-1.5H4.66l2.1-1.95a.75.75 0 0 0 .04-1.06Z"
                 clip-rule="evenodd" />
@@ -566,6 +567,40 @@
 
                 <!-- section body -->
                 <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3.5 md:gap-5">
+                    <!-- product one -->
+                    <div class="p-2 md:p-5 rounded-2xl bg-white dark:bg-zinc-700 shadow-normal">
+                        <div class="relative mb-2 md:mb-5">
+                            <img src="./images/products/p4.png" class="w-32 mx-auto md:w-auto" alt="p 1">
+
+                        </div>
+                        <h5 class="font-DanaDemiBold text-sm md:text-xl h-10 md:h-14 text-zinc-500 dark:text-white line-clamp-2">قهوه
+                            ترک بن مانو مقدار 250 گرم
+                            خط دوم اسم طولانی</h5>
+                        <div class="flex gap-x-2 md:gap-x-2.5 mt-1.5 md:mt-2.5">
+                            <div class="text-teal-600 dark:text-emerald-500">
+                                <span class="font-DanaDemiBold text-base md:text-xl">175,000</span>
+                                <span class="text-xs md:text-sm tracking-tighter">تومان</span>
+                            </div>
+                            <!-- <div class="offer text-gray-400">
+                                <span class="text-xs md:text-xl">175,000</span>
+                                <span class="hidden xl:inline text-sm tracking-tighter">تومان</span>
+                            </div> -->
+                        </div>
+                    </div>
+                    <!-- product two -->
+                    <div class="p-2 md:p-5 rounded-2xl bg-white dark:bg-zinc-700 shadow-normal">
+                        <div class="relative mb-2 md:mb-5">
+                            <img src="./images/products/p3.png" class="w-32 mx-auto md:w-auto" alt="p 1">
+
+                        </div>
+                        <h5 class="font-DanaDemiBold text-sm md:text-xl h-10 md:h-14 text-zinc-500 dark:text-white line-clamp-2">قهوه
+                            ترک بن مانو مقدار 250 گرم
+                            خط دوم اسم طولانی</h5>
+                        <div class="flex gap-x-2 md:gap-x-2.5 mt-1.5 md:mt-2.5">
+                            <span class="text-base md:text-xl text-red-400">فعلا موجود نیست</span>
+                        </div>
+                    </div>
+                    <!-- product three -->
                     <div class="p-2 md:p-5 rounded-2xl bg-white dark:bg-zinc-700 shadow-normal">
                         <div class="relative mb-2 md:mb-5">
                             <img src="./images/products/p1.png" class="w-32 mx-auto md:w-auto" alt="p 1">
@@ -573,7 +608,82 @@
                                 class="absolute top-1.5
                              right-1.5 font-DanaDemiBold block h-5 md:h-[30px] text-xs/[24px] md:text-base/[34px] bg-orange-300 text-white dark:text-zinc-700 px-2.5 md:px-3.5 rounded-full">12%</span>
                         </div>
-                        <h5 class="font-DanaDemiBold text-sm md:text-xl text-zinc-500 dark:text-white line-clamp-2">قهوه
+                        <h5 class="font-DanaDemiBold text-sm md:text-xl h-10 md:h-14 text-zinc-500 dark:text-white line-clamp-2">قهوه
+                            ترک بن مانو مقدار 250 گرم
+                            خط دوم اسم طولانی</h5>
+                        <div class="flex gap-x-2 md:gap-x-2.5 mt-1.5 md:mt-2.5">
+                            <div class="text-teal-600 dark:text-emerald-500">
+                                <span class="font-DanaDemiBold text-base md:text-xl">154,000</span>
+                                <span class="text-xs md:text-sm tracking-tighter">تومان</span>
+                            </div>
+                            <div class="offer text-gray-400">
+                                <span class="text-xs md:text-xl">175,000</span>
+                                <span class="hidden xl:inline text-sm tracking-tighter">تومان</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between mt-2.5">
+                            <div class="flex items-center gap-x-2.5 md:gap-x-3">
+                                <span
+                                    class="flex-center w-[26px] h-[26px] md:w-9 md:h-9 rounded-full text-gray-400 bg-gray-100 hover:bg-teal-600 dark:bg-zinc-800 dark:hover:bg-emerald-500 hover:text-white transition-all cursor-pointer">
+                                    <svg class="w-4 h-4 md:w-[22px] md:h-[22px]">
+                                        <use href="#shopping-cart"></use>
+                                    </svg>
+                                </span>
+                                <span
+                                    class="block rounded-full text-gray-400 hover:text-teal-600 dark:hover:text-emerald-500 transition-all cursor-pointer">
+                                    <svg class="w-4 h-4 md:w-6 md:h-6">
+                                        <use href="#arrows-right-left"></use>
+                                    </svg>
+                                </span>
+                            </div>
+                            <div class="flex text-yellow-400">
+                                <svg class="w-4 h-4 md:w-6 md:h-6 text-gray-300 dark:text-gray-400">
+                                    <use href="#star"></use>
+                                </svg>
+                                <svg class="w-4 h-4 md:w-6 md:h-6">
+                                    <use href="#star"></use>
+                                </svg>
+                                <svg class="w-4 h-4 md:w-6 md:h-6">
+                                    <use href="#star"></use>
+                                </svg>
+                                <svg class="w-4 h-4 md:w-6 md:h-6">
+                                    <use href="#star"></use>
+                                </svg>
+                                <svg class="w-4 h-4 md:w-6 md:h-6">
+                                    <use href="#star"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- product four -->
+                    <div class="p-2 md:p-5 rounded-2xl bg-white dark:bg-zinc-700 shadow-normal">
+                        <div class="relative mb-2 md:mb-5">
+                            <img src="./images/products/p2.png" class="w-32 mx-auto md:w-auto" alt="p 1">
+
+                        </div>
+                        <h5 class="font-DanaDemiBold text-sm md:text-xl h-10 h-14 text-zinc-500 dark:text-white line-clamp-2">قهوه
+                            ترک بن مانو مقدار 250 گرم
+                            خط دوم اسم طولانی</h5>
+                        <div class="flex gap-x-2 md:gap-x-2.5 mt-1.5 md:mt-2.5">
+                            <div class="text-teal-600 dark:text-emerald-500">
+                                <span class="font-DanaDemiBold text-base md:text-xl">175,000</span>
+                                <span class="text-xs md:text-sm tracking-tighter">تومان</span>
+                            </div>
+                            <!-- <div class="offer text-gray-400">
+                                <span class="text-xs md:text-xl">175,000</span>
+                                <span class="hidden xl:inline text-sm tracking-tighter">تومان</span>
+                            </div> -->
+                        </div>
+                    </div>
+                    <!-- product five -->
+                    <div class="p-2 md:p-5 rounded-2xl bg-white dark:bg-zinc-700 shadow-normal">
+                        <div class="relative mb-2 md:mb-5">
+                            <img src="./images/products/p1.png" class="w-32 mx-auto md:w-auto" alt="p 1">
+                            <span
+                                class="absolute top-1.5
+                             right-1.5 font-DanaDemiBold block h-5 md:h-[30px] text-xs/[24px] md:text-base/[34px] bg-orange-300 text-white dark:text-zinc-700 px-2.5 md:px-3.5 rounded-full">12%</span>
+                        </div>
+                        <h5 class="font-DanaDemiBold text-sm md:text-xl h-10 md:h-14 text-zinc-500 dark:text-white line-clamp-2">قهوه
                             ترک بن مانو مقدار 250 گرم
                             خط دوم اسم طولانی</h5>
                         <div class="flex gap-x-2 md:gap-x-2.5 mt-1.5 md:mt-2.5">
@@ -587,13 +697,59 @@
                             </div>
                         </div>
                     </div>
-                    <div class="p-2 md:p-5 rounded-2xl bg-white dark:bg-zinc-700 shadow-normal"></div>
-                    <div class="p-2 md:p-5 rounded-2xl bg-white dark:bg-zinc-700 shadow-normal"></div>
-                    <div class="p-2 md:p-5 rounded-2xl bg-white dark:bg-zinc-700 shadow-normal"></div>
-                    <div class="p-2 md:p-5 rounded-2xl bg-white dark:bg-zinc-700 shadow-normal"></div>
-                    <div class="p-2 md:p-5 rounded-2xl bg-white dark:bg-zinc-700 shadow-normal"></div>
-                    <div class="p-2 md:p-5 rounded-2xl bg-white dark:bg-zinc-700 shadow-normal"></div>
-                    <div class="p-2 md:p-5 rounded-2xl bg-white dark:bg-zinc-700 shadow-normal"></div>
+                    <!-- product six -->
+                    <div class="p-2 md:p-5 rounded-2xl bg-white dark:bg-zinc-700 shadow-normal">
+                        <div class="relative mb-2 md:mb-5">
+                            <img src="./images/products/p2.png" class="w-32 mx-auto md:w-auto" alt="p 1">
+
+                        </div>
+                        <h5 class="font-DanaDemiBold text-sm md:text-xl h-10 md:h-14 text-zinc-500 dark:text-white line-clamp-2">قهوه
+                            ترک بن مانو مقدار 250 گرم
+                            خط دوم اسم طولانی</h5>
+                        <div class="flex gap-x-2 md:gap-x-2.5 mt-1.5 md:mt-2.5">
+                            <span class="text-base md:text-xl text-red-400">فعلا موجود نیست</span>
+                        </div>
+                    </div>
+                    <!-- product seven -->
+                    <div class="p-2 md:p-5 rounded-2xl bg-white dark:bg-zinc-700 shadow-normal">
+                        <div class="relative mb-2 md:mb-5">
+                            <img src="./images/products/p4.png" class="w-32 mx-auto md:w-auto" alt="p 1">
+
+                        </div>
+                        <h5 class="font-DanaDemiBold text-sm md:text-xl h-10 h-14 text-zinc-500 dark:text-white line-clamp-2">قهوه
+                            ترک بن مانو مقدار 250 گرم
+                            خط دوم اسم طولانی</h5>
+                        <div class="flex gap-x-2 md:gap-x-2.5 mt-1.5 md:mt-2.5">
+                            <div class="text-teal-600 dark:text-emerald-500">
+                                <span class="font-DanaDemiBold text-base md:text-xl">175,000</span>
+                                <span class="text-xs md:text-sm tracking-tighter">تومان</span>
+                            </div>
+                            <!-- <div class="offer text-gray-400">
+                                <span class="text-xs md:text-xl">175,000</span>
+                                <span class="hidden xl:inline text-sm tracking-tighter">تومان</span>
+                            </div> -->
+                        </div>
+                    </div>
+                    <!-- product eight -->
+                    <div class="p-2 md:p-5 rounded-2xl bg-white dark:bg-zinc-700 shadow-normal">
+                        <div class="relative mb-2 md:mb-5">
+                            <img src="./images/products/p3.png" class="w-32 mx-auto md:w-auto" alt="p 1">
+
+                        </div>
+                        <h5 class="font-DanaDemiBold text-sm md:text-xl h-10 md:h-14 text-zinc-500 dark:text-white line-clamp-2">قهوه
+                            ترک بن مانو مقدار 250 گرم
+                            خط دوم اسم طولانی</h5>
+                        <div class="flex gap-x-2 md:gap-x-2.5 mt-1.5 md:mt-2.5">
+                            <div class="text-teal-600 dark:text-emerald-500">
+                                <span class="font-DanaDemiBold text-base md:text-xl">175,000</span>
+                                <span class="text-xs md:text-sm tracking-tighter">تومان</span>
+                            </div>
+                            <!-- <div class="offer text-gray-400">
+                                <span class="text-xs md:text-xl">175,000</span>
+                                <span class="hidden xl:inline text-sm tracking-tighter">تومان</span>
+                            </div> -->
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
