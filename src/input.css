@@ -20,6 +20,7 @@
   --breakpoints-xs: 480px;
 
   --spacing-30: 7.5rem;
+  --spacing-50: 12.5rem;
 }
 
 @utility container {
