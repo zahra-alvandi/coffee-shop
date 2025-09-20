@@ -492,9 +492,6 @@
   .h-px {
     height: 1px;
   }
-  .min-h-screen {
-    min-height: 100vh;
-  }
   .w-1 {
     width: calc(var(--spacing) * 1);
   }
